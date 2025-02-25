@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -9,25 +9,25 @@ body {
 
 header {
     background: rgb(20, 177, 212);
-   
     color: #fff;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
+
 .batch {
-    background-color:rgb(20, 177, 212) ;
     height: 7.5rem;
     width: 10rem;
-    border: 1px solid rgb(20, 177, 212) ;
     border-radius: 50%;
-    background-image: url("Orange\ and\ Yellow\ Kitchen\ Food\ Logo.png");
+    background-image: url("Orange%20and%20Yellow%20Kitchen%20Food%20Logo.png");
     background-size: cover;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -50,16 +50,6 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    border-bottom: 2px solid ;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 
 .menu-item {
@@ -110,24 +100,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #45a049; 
-}
-
-#orderConfirmation {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #dff0d8; 
-    color: #3c763d;
-    border: 1px solid #d6e9c6; 
-    border-radius: 5px;
-}
-
-.hidden {
-    display: none;
 }
 
 footer {
@@ -140,10 +117,58 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
-.logo {
-    background-image: url("https://svsu.ac.in/img/SVSU-Logo.png");
-    height: 100px;
-    width: 350px;
-    margin-left: 530px;
-    
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .batch {
+        height: 6rem;
+        width: 8rem;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .batch {
+        height: 5rem;
+        width: 6rem;
+    }
+
+    button {
+        width: 100%;
+    }
 }
